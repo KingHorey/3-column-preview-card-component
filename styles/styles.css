@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+
+.div-one, .div-two, .div-three {
+  padding: 2em;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.div-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.div-three {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+
+.flex-container {
+  max-width: 60%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  /* border-radius: 10px; */
+}
+
+h1 {
+  width: 50%;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+img {
+  /* width: 30%; */
+  height: 30px;
+}
+
+p, a {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+a {
+  border-radius: 25px;
+  padding: 0.5em;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5%;
+  flex-shrink: 2%;
+  font-size: 11px;
+  width: 8em;
+  text-align: center;
+}
+
+a.sedanlink {
+  color: hsl(31, 77%, 52%)
+}
+
+a.suvlink {
+  color: hsl(184, 100%, 22%)
+}
+
+a.luxurylink {
+  color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  border: 0.8px solid #fff;
+  cursor: pointer;
+  }
+}
+
+/* for small screens */
+
+@media (max-width: 599px) {
+
+.div-one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.div-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.div-three {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+
+.div-one, .div-two, .div-three {
+  padding: 2em;
+}
+
+.flex-container {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+p {
+  color: #fff;
+}
+
+a.sedanlink {
+  color: hsl(31, 77%, 52%)
+}
+
+a.suvlink {
+  color: hsl(184, 100%, 22%)
+}
+
+a.luxurylink {
+  color: hsl(179, 100%, 13%);
+}
+
+a {
+  background-color: #fff;
+  padding: .9em;
+  font-size: 10px;
+  border-radius: 25px;
+  /* width: 25%; */
+  /* display: inline-block; */
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  border: 0.8px solid #fff;
+  cursor: pointer;
+  }
+
+h1 {
+  width: 50%;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+img {
+  /* width: 30%; */
+  height: 30px;
+}
+
+p, a {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+}
